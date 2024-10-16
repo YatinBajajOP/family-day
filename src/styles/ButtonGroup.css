@@ -1,0 +1,26 @@
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .check-in {
+    background-color: #27ae60;
+  }
+  
+  .entry {
+    background-color: #2980b9;
+  }
+  
+  .gift {
+    background-color: #e74c3c;
+  }
+  
