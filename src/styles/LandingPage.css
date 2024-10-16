@@ -44,6 +44,6 @@
     padding: 10px;
     border: none;
     cursor: pointer;
-    width: max(20ch, calc(100% - 22px));
+    width: max(20ch, 100%);
   }
   
