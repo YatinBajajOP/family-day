@@ -1,12 +1,21 @@
 .barcode-container {
-    text-align: center;
-  }
+  text-align: center;
+  box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
   
   h1 {
     color: #414956;
   }
   
-  .btn {
+  .barcode-container .btn {
     background-color: #4AA00F;
     color: #FFFFFF;
     margin: 10px;
@@ -15,7 +24,7 @@
     cursor: pointer;
   }
   
-  .cancel-btn {
+  .barcode-container .home-btn {
     background-color: #B72F2A;
   }
   

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import dummyData from '../dummyData';
-import '../styles/Banner.css';
+import Banner from '../assets/banner.png'
+import axios from 'axios'
+import '../styles/LandingPage.css'
 
 const LandingPage = () => {
   const [userId, setUserId] = useState('');
@@ -12,23 +13,25 @@ const LandingPage = () => {
     setUserId(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (userId === dummyData.unique_code) {
-      if (dummyData.checkedIn) {
+    const id = e.target.userId.value
+    let response
+    try{
+      response = await axios.get(`https://fu721ee2ff.execute-api.eu-north-1.amazonaws.com/dev/getUserDetails/${id}`)
+      if (response.data.checkedIn) {
         navigate('/barcode');
       } else {
         navigate('/form');
       }
-    } else {
+    } catch(e) {
       setErrorMessage('Entered ID is incorrect. Please try again.');
     }
   };
 
   return (
-    <div className="landing-container">
-      <div className="banner" />
+    <div className="landing-page">
+      <img src = {Banner} className='banner'/>
       <form onSubmit={handleSubmit} className="landing-form">
         <label htmlFor="userId">Enter Your 6-Digit Code</label>
         <input

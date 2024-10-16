@@ -1,8 +1,7 @@
 .App {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light grey background */
-    color: #000;
-    text-align: center;
-    min-height: 100vh;
-  }
-   
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light grey background */
+  color: #000;
+  text-align: center;
+  min-height: 100vh;
+}

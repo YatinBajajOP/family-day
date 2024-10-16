@@ -1,12 +1,17 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     background-color: #ECF9FD;
     font-family: Arial, sans-serif;
     color: #414956;
   }
-  
+
   .app-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
   }
-  

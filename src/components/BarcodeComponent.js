@@ -34,8 +34,8 @@ const BarcodeComponent = () => {
       <button className="btn" onClick={handleUpdateDetails}>
         Update Details
       </button>
-      <button className="btn cancel-btn" onClick={() => navigate('/')}>
-        Cancel
+      <button className="btn home-btn" onClick={() => navigate('/')}>
+        Home
       </button>
     </div>
   );

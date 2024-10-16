@@ -1,29 +1,45 @@
 .form-container {
-  background-color: #FFFFFF;
+  background-color: #fff;
   padding: 20px;
   border: 1px solid #414956;
+  box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+  width: max(200px, 60vw);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
-input, select {
+.form-container input {
   margin-bottom: 10px;
   padding: 10px;
-  width: 100%;
+  width: max(20ch, calc(100% - 22px));
   border: 1px solid #414956;
 }
 
-label {
+.form-container select {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: max(20ch, 100%);
+  border: 1px solid #414956;
+  display: block;
+}
+
+.form-container label {
   display: block;
   margin-bottom: 5px;
 }
 
-.btn {
+.form-container .btn {
   background-color: #006193;
   color: #FFFFFF;
   padding: 10px;
   border: none;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
-.cancel-btn {
+.form-container .cancel-btn {
   background-color: #B72F2A;
 }
